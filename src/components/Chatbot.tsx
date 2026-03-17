@@ -99,7 +99,7 @@ export default function Chatbot() {
                                 "max-w-[80%] p-4 rounded-2xl text-sm font-sans",
                                 msg.sender === 'user'
                                     ? "bg-primary text-secondary rounded-tr-none"
-                                    : "bg-white text-foreground shadow-sm rounded-tl-none"
+                                    : "bg-slate-50 text-slate-900 shadow-sm rounded-tl-none"
                             )}>
                                 {msg.text}
                             </div>
@@ -108,12 +108,12 @@ export default function Chatbot() {
                     {/* FAQ Suggestions */}
                     {messages.length === 1 && (
                         <div className="pt-4 space-y-2">
-                            <p className="text-[10px] uppercase tracking-widest text-foreground/40 mb-2">Common questions:</p>
+                            <p className="text-[10px] uppercase tracking-widest text-slate-500 mb-2">Common questions:</p>
                             {faqs.map((faq) => (
                                 <button
                                     key={faq.q}
                                     onClick={() => handleSend(faq.q)}
-                                    className="block w-full text-left p-2 rounded-lg bg-white/50 text-xs font-sans hover:bg-white transition-colors border border-primary/10"
+                                    className="block w-full text-left p-2 rounded-lg bg-slate-50 text-xs font-sans text-slate-900 hover:bg-white transition-colors border border-primary/10"
                                 >
                                     {faq.q}
                                 </button>
@@ -130,7 +130,7 @@ export default function Chatbot() {
                         onChange={(e) => setInputValue(e.target.value)}
                         onKeyPress={(e) => e.key === 'Enter' && handleSend(inputValue)}
                         placeholder="Type your message..."
-                        className="flex-grow p-3 bg-secondary/10 rounded-xl focus:outline-none focus:ring-1 focus:ring-primary text-sm font-sans text-foreground"
+                        className="flex-grow p-3 bg-slate-50 rounded-xl focus:outline-none focus:ring-1 focus:ring-primary text-sm font-sans text-slate-900 caret-primary"
                     />
                     <button
                         onClick={() => handleSend(inputValue)}

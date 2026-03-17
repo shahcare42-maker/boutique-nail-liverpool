@@ -75,8 +75,8 @@ export default function BookingSystem() {
                                 >
                                     <div className="flex justify-between items-center">
                                         <div>
-                                            <h3 className="font-serif text-xl mb-1 group-hover:text-primary transition-colors">{service.name}</h3>
-                                            <p className="text-sm font-sans text-foreground/50">{service.duration}</p>
+                                            <h3 className="font-serif text-xl mb-1 group-hover:text-primary transition-colors text-slate-900">{service.name}</h3>
+                                            <p className="text-sm font-sans text-slate-500">{service.duration}</p>
                                         </div>
                                         <span className="font-serif text-2xl text-primary">£{service.price}</span>
                                     </div>
@@ -99,16 +99,16 @@ export default function BookingSystem() {
                         </div>
 
                         <div className="mb-8">
-                            <label className="block text-sm font-sans uppercase tracking-widest text-foreground/50 mb-4">Select Date</label>
+                            <label className="block text-sm font-sans uppercase tracking-widest text-slate-500 mb-4">Select Date</label>
                             <input
                                 type="date"
                                 onChange={(e) => handleDateSelect(e.target.value)}
-                                className="w-full p-4 rounded-xl bg-white/40 border border-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50 font-sans text-foreground"
+                                className="w-full p-4 rounded-xl bg-slate-50 border border-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50 font-sans text-slate-900 caret-primary"
                             />
                         </div>
 
                         <div className="space-y-4">
-                            <label className="block text-sm font-sans uppercase tracking-widest text-foreground/50">Available Times</label>
+                            <label className="block text-sm font-sans uppercase tracking-widest text-slate-500">Available Times</label>
                             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                                 {timeSlots.map((time) => (
                                     <button
@@ -116,7 +116,7 @@ export default function BookingSystem() {
                                         onClick={() => handleTimeSelect(time)}
                                         className={cn(
                                             "p-3 rounded-xl border font-sans text-sm transition-all duration-300",
-                                            selectedTime === time ? "bg-primary text-secondary border-primary shadow-md" : "bg-white/40 border-primary/10 hover:border-primary/40"
+                                            selectedTime === time ? "bg-primary text-secondary border-primary shadow-md" : "bg-slate-50/50 text-slate-900 border-primary/10 hover:border-primary/40"
                                         )}
                                     >
                                         {time}
@@ -142,26 +142,26 @@ export default function BookingSystem() {
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="space-y-4">
                                 <div>
-                                    <label className="block text-sm font-sans text-foreground/60 mb-2">Full Name</label>
+                                    <label className="block text-sm font-sans text-slate-600 mb-2">Full Name</label>
                                     <input
                                         type="text" required
-                                        className="w-full p-4 rounded-xl bg-white/40 border border-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50 text-foreground"
+                                        className="w-full p-4 rounded-xl bg-slate-50 border border-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50 text-slate-900 caret-primary"
                                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-sans text-foreground/60 mb-2">Email Address</label>
+                                    <label className="block text-sm font-sans text-slate-600 mb-2">Email Address</label>
                                     <input
                                         type="email" required
-                                        className="w-full p-4 rounded-xl bg-white/40 border border-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50 text-foreground"
+                                        className="w-full p-4 rounded-xl bg-slate-50 border border-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50 text-slate-900 caret-primary"
                                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-sans text-foreground/60 mb-2">Phone Number</label>
+                                    <label className="block text-sm font-sans text-slate-600 mb-2">Phone Number</label>
                                     <input
                                         type="tel" required
-                                        className="w-full p-4 rounded-xl bg-white/40 border border-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50 text-foreground"
+                                        className="w-full p-4 rounded-xl bg-slate-50 border border-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50 text-slate-900 caret-primary"
                                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                                     />
                                 </div>
