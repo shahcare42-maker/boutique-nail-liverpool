@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #A78BFA;
+    /* Vibrant Amethyst for links and accents */
+    --secondary: #0F172A;
+    /* Deep Midnight */
+    --background: #0B1120;
+    /* Darker Midnight */
+    --foreground: #F8FAFC;
+    /* Stark White / Light Gray for text */
+    --accent: #C4B5FD;
+    /* Lighter Amethyst */
+    --primary-light: #DDD6FE;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #020617;
+      --foreground: #F1F5F9;
+      --primary: #A78BFA;
+    }
+  }
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+}
