@@ -9,7 +9,7 @@ const featuredServices = [
   {
     title: "BIAB Nails",
     description: "The ultimate strength and growth treatment for natural nails.",
-    image: "https://images.unsplash.com/photo-1632345031435-87bd7c3ad81c?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=800&auto=format&fit=crop",
     price: "From £30"
   },
   {

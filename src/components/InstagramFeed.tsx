@@ -5,7 +5,7 @@ const igPosts = [
     { id: 1, src: "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=400&auto=format&fit=crop" },
     { id: 2, src: "https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=400&auto=format&fit=crop" },
     { id: 3, src: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=400&auto=format&fit=crop" },
-    { id: 4, src: "https://images.unsplash.com/photo-1634128221889-82ed6efdf33c?q=80&w=400&auto=format&fit=crop" },
+    { id: 4, src: "https://images.unsplash.com/photo-1604243763953-2475e656d0d2?q=80&w=400&auto=format&fit=crop" },
     { id: 5, src: "https://images.unsplash.com/photo-1522337360788-8b13df75526a?q=80&w=400&auto=format&fit=crop" },
     { id: 6, src: "https://images.unsplash.com/photo-1534067783941-51c9c23eccfd?q=80&w=400&auto=format&fit=crop" },
 ];
