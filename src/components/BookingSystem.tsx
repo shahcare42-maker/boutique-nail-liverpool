@@ -103,7 +103,7 @@ export default function BookingSystem() {
                             <input
                                 type="date"
                                 onChange={(e) => handleDateSelect(e.target.value)}
-                                className="w-full p-4 rounded-xl bg-white/40 border border-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50 font-sans"
+                                className="w-full p-4 rounded-xl bg-white/40 border border-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50 font-sans text-foreground"
                             />
                         </div>
 
@@ -145,7 +145,7 @@ export default function BookingSystem() {
                                     <label className="block text-sm font-sans text-foreground/60 mb-2">Full Name</label>
                                     <input
                                         type="text" required
-                                        className="w-full p-4 rounded-xl bg-white/40 border border-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                                        className="w-full p-4 rounded-xl bg-white/40 border border-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50 text-foreground"
                                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                                     />
                                 </div>
@@ -153,7 +153,7 @@ export default function BookingSystem() {
                                     <label className="block text-sm font-sans text-foreground/60 mb-2">Email Address</label>
                                     <input
                                         type="email" required
-                                        className="w-full p-4 rounded-xl bg-white/40 border border-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                                        className="w-full p-4 rounded-xl bg-white/40 border border-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50 text-foreground"
                                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                     />
                                 </div>
@@ -161,7 +161,7 @@ export default function BookingSystem() {
                                     <label className="block text-sm font-sans text-foreground/60 mb-2">Phone Number</label>
                                     <input
                                         type="tel" required
-                                        className="w-full p-4 rounded-xl bg-white/40 border border-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                                        className="w-full p-4 rounded-xl bg-white/40 border border-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50 text-foreground"
                                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                                     />
                                 </div>

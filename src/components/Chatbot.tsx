@@ -130,7 +130,7 @@ export default function Chatbot() {
                         onChange={(e) => setInputValue(e.target.value)}
                         onKeyPress={(e) => e.key === 'Enter' && handleSend(inputValue)}
                         placeholder="Type your message..."
-                        className="flex-grow p-3 bg-secondary/10 rounded-xl focus:outline-none focus:ring-1 focus:ring-primary text-sm font-sans"
+                        className="flex-grow p-3 bg-secondary/10 rounded-xl focus:outline-none focus:ring-1 focus:ring-primary text-sm font-sans text-foreground"
                     />
                     <button
                         onClick={() => handleSend(inputValue)}
